@@ -1,5 +1,6 @@
 // Fonts
 @import url('https://fonts.bunny.net/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Indie+Flower&family=Qwitcher+Grypen:wght@400;700&display=swap');
 
 // Variables
 @import 'partials/generic/variables.scss';
@@ -13,3 +14,56 @@
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
 $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/WebFonts" !default;
+
+body{
+    font-family: "Indie Flower", cursive;
+    font-size: 1.2rem;
+}
+
+header {
+    background-color: $primary;
+    box-shadow: 0px 1px 4px 0px #340a24;
+
+    a.nav-link{
+        color: white;
+
+        &:hover{
+            color: white;
+            scale: 1.1;
+        }
+
+        &:focus{
+            color: white;
+            scale: 1.1;
+        }
+    }
+
+    a.nav-link.home-link{
+        font-size: 1.8rem;
+        text-shadow: 0px 4px 3px rgba(0, 0, 0, .85);
+    }
+
+    a.nav-link {
+        font-size: 1.5rem;
+        text-shadow: 0px 4px 3px rgba(0, 0, 0, .75);
+    }
+}
+
+.my_font-bold{
+    -webkit-text-stroke: .5px;
+    -webkit-text-stroke-color: black;
+}
+
+.card {
+    border-color: $dark;
+
+    .card-header{
+        border-bottom-color: $dark;
+        background-color: rgba(230,189,214,0.6);
+        color: $dark;
+    }
+
+    button{
+        font-size: 1.2rem
+    }
+}
