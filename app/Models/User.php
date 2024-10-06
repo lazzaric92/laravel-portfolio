@@ -26,6 +26,8 @@ class User extends Authenticatable
         'profile_img',
         'cover_img',
         'summary',
+        'github',
+        'linkedin',
         'deleted_at'
     ];
 

@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('profile_img')->nullable();
             $table->string('cover_img')->nullable();
             $table->text('summary')->nullable();
+            $table->string('github')->nullable();
+            $table->string('linkedin')->nullable();
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();
