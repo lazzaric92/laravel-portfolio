@@ -17,7 +17,7 @@ class Project extends Model
         'github',
         'date',
         'description',
-        'is_available',
+        'is_visible',
     ];
 
     public function user(){
