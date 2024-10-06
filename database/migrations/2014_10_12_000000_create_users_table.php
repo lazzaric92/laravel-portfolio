@@ -18,11 +18,11 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('profile_img')->nullable();
-            $table->string('cover_img')->nullable();
-            $table->text('summary')->nullable();
-            $table->string('github')->nullable();
-            $table->string('linkedin')->nullable();
+            $table->text('profile_img')->nullable(true);
+            $table->text('cover_img')->nullable(true);
+            $table->text('summary')->nullable(true);
+            $table->text('github')->nullable(true);
+            $table->text('linkedin')->nullable(true);
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();
